@@ -1,0 +1,42 @@
+/* Remove default Prime padding */
+.custom-menubar .p-menuitem-link {
+  padding: 0 !important;
+}
+
+/* Base link style */
+.menu-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 0.55rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 500;
+  color: #374151;
+  transition: all 0.25s ease;
+}
+
+/* 👇 Professional Hover */
+.menu-link:hover {
+  background: rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+/* 👇 Active Pill */
+.menu-link.custom-active {
+  background: #111;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Keep active clean */
+.menu-link.custom-active:hover {
+  background: #111;
+  transform: none;
+}
+
+/* Remove menubar border */
+.custom-menubar {
+  border: none !important;
+  background: transparent !important;
+}
