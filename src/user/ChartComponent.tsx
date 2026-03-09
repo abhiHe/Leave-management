@@ -48,7 +48,8 @@ const ChartComponent = () => {
     setChartOptions(options);
   }, []);
   return (
-     <div className="card p-3">
+    //  <div className="card p-3">
+    <div>
       <h3>Employee Leave Report (Monthly)</h3>
       <Chart type="bar" height='250px' data={chartData} options={chartOptions} />
     </div>

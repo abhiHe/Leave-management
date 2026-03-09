@@ -1,6 +1,23 @@
-/* Remove default Prime padding */
-.custom-menubar .p-menuitem-link {
-  padding: 0 !important;
+/* Card container */
+.dashboard-card {
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+/* Remove default Prime padding and force centering */
+.custom-menubar {
+  border: none !important;
+  background: transparent !important;
+  justify-content: center; 
+  /* Centers the items horizontally */
+}
+
+/* Ensure the root list is centered */
+.custom-menubar .p-menubar-root-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adds space between menu items */
 }
 
 /* Base link style */
@@ -9,34 +26,27 @@
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  padding: 0.55rem 1.3rem;
-  border-radius: 999px;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px; /* Stronger pill shape */
   font-weight: 500;
-  color: #374151;
-  transition: all 0.25s ease;
+  color: #4b5563; /* Tailwind gray-600 */
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
 }
 
-/* 👇 Professional Hover */
+/* Hover effect */
 .menu-link:hover {
-  background: rgba(0, 0, 0, 0.06);
-  transform: translateY(-1px);
+  background-color: #f3f4f6; /* Soft gray hover */
+  color: #111827;
 }
 
-/* 👇 Active Pill */
-.menu-link.custom-active {
-  background: #111;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+/* Active style (The "Professional" Look) */
+.menu-link.active {
+  background-color: #111827; /* Dark background */
+  color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
 }
 
-/* Keep active clean */
-.menu-link.custom-active:hover {
-  background: #111;
-  transform: none;
-}
-
-/* Remove menubar border */
-.custom-menubar {
-  border: none !important;
-  background: transparent !important;
+.menu-link.active:hover {
+  background-color: #000;
 }

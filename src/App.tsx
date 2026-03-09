@@ -2,7 +2,8 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Login from './starter/Login'
 import Register from './starter/Register'
-import UserLayout from './user/UserLayout/UserLayout'
+import AdminLayout from './user/AdminLayout/AdminLayout'
+import ManagerLayout from './manager/managerlayout/ManagerLayout'
 
 const App = () => {
   return (
@@ -11,8 +12,8 @@ const App = () => {
       <Route path='/' element={<Login />} />
       <Route path='/register' element={<Register />} />
 
-      <Route path='/user/*' element={<UserLayout />} />
-
+      <Route path='/admin/*' element={<AdminLayout />} />
+      <Route path='/manager/*' element={<ManagerLayout />} />
         
     </Routes>
     </BrowserRouter>
