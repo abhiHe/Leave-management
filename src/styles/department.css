@@ -1,0 +1,19 @@
+/* Edit Button Hover */
+.custom-edit-btn:hover {
+  background-color: var(--info-color, #0dcaf0) !important;
+  color: #fff !important;
+}
+
+.custom-edit-btn:hover .pi {
+  color: #fff !important;
+}
+
+/* Delete Button Hover */
+.custom-delete-btn:hover {
+  background-color: var(--danger-color, #dc3545) !important;
+  color: #fff !important;
+}
+
+.custom-delete-btn:hover .pi {
+  color: #fff !important;
+}
